@@ -1,0 +1,9 @@
+#:F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.common\id.common.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.core\id.core.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.data\id.data.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.middleware.common\id.middleware.common.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\MvcApi\MvcApi.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.application\id.application.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.data\id.data.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.core\id.core.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.application\id.application.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.common\id.common.xproj
+F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.application\id.application.xproj|F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\id.data\id.data.xproj

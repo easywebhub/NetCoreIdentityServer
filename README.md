@@ -1,5 +1,3 @@
-## Deploy at server:
+# Quickstart #6: IdentityServer and ASP.NET Identity
 
-VPS win 2012 RAM 4G SSD
-
-45.119.81.223
+This quickstart uses ASP.NET Identity for identity management.

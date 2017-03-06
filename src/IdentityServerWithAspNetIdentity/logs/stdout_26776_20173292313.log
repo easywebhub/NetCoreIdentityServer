@@ -1,0 +1,50 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\IdentityServer4.Samples\Quickstarts\6_AspNetIdentity\src\IdentityServerWithAspNetIdentity
+Now listening on: http://localhost:32822
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[3]
+      HttpContext.User merged via AutomaticAuthentication from authenticationScheme: Identity.Application.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 1794.3505ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2336.157ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/manageapiresource  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[3]
+      HttpContext.User merged via AutomaticAuthentication from authenticationScheme: Identity.Application.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.ManageApiResource.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (42ms) [Parameters=[@p0='?' (Size = 1000), @p1='?' (Size = 200), @p2='?', @p3='?' (Size = 200)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [ApiResources] ([Description], [DisplayName], [Enabled], [Name])
+      VALUES (@p0, @p1, @p2, @p3);
+      SELECT [Id]
+      FROM [ApiResources]
+      WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[Description], [a].[DisplayName], [a].[Enabled], [a].[Name]
+      FROM [ApiResources] AS [a]
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/ManageApiResource/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.ManageApiResource.Index (IdentityServerWithAspNetIdentity) in 353.6211ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 360.4137ms 200 text/html; charset=utf-8

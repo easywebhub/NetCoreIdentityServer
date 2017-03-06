@@ -1,0 +1,16 @@
+﻿@model List<IdentityServer4.EntityFramework.Entities.ApiResource>
+@{
+    ViewData["Title"] = "Manage your account";
+}
+
+<h2>@ViewData["Title"].</h2>
+<p class="text-success">@ViewData["StatusMessage"]</p>
+
+<div>
+    <h4>Change your account settings</h4>
+    <hr />
+    @foreach(var item in Model)
+    {
+        <div>@item.DisplayName</div>
+    }
+</div>
