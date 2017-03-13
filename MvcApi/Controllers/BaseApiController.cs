@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using id.common;
+using id.common.Entities;
+using System.Web.Http;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -67,16 +69,16 @@ namespace MvcApi.Controllers
             return NoOK(statusCode.ToString());
         }
 
-        //protected IActionResult ServerError(EwhEntityBase ewhEntityBase)
-        //{
-        //    var x = NoOK(ewhEntityBase.EwhStatus.ToString()) as ResponseMessageResult;
-        //    if (ewhEntityBase != null)
-        //    {
-        //        x.Response.Headers.Add(EwHeaders.X_Error_Message, ewhEntityBase.EwhErrorMessage);
-        //        x.Response.Headers.Add(EwHeaders.X_Status, ewhEntityBase.EwhStatus.ToString());
-        //    }
-        //    return x;
-        //}
+        protected IActionResult ServerError(IXEntityBase ewhEntityBase)
+        {
+            var x = NoOK(ewhEntityBase.XStatus.ToString()) as ResponseMessageResult;
+            if (ewhEntityBase != null)
+            {
+                x.Response.Headers.Add(XHeaders.X_Error_Message, ewhEntityBase.XErrorMessage);
+                x.Response.Headers.Add(XHeaders.X_Status, ewhEntityBase.XStatus.ToString());
+            }
+            return x;
+        }
 
 
     }

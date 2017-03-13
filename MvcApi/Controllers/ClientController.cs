@@ -28,12 +28,24 @@ namespace MvcApi.Controllers
             return Ok(_accountManager.GetListClient());
         }
 
+        [Route("clients")]
+        [HttpPost]
+        public IActionResult CreateClient([FromBody] ClientVm dto)
+        {
+            return Ok(_accountManager.GetListClient());
+        }
+        public class ClientVm
+        {
+            public string Name { get; set; }
+            public int Order { get; set; }
+        }
+
         [Route("test")]
         [HttpGet]
         public IActionResult TestMiddleware()
         {
-            return base.BadRequest();
-            //return Ok();
+            //return base.BadRequest();
+            return Ok(new { Name="Abc", Age="18" });
         }
 
 

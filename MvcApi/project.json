@@ -6,7 +6,7 @@
     },
     "Microsoft.ApplicationInsights.AspNetCore": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
-    "Microsoft.AspNetCore.Routing": "1.0.1",
+    "Microsoft.AspNetCore.Routing": "1.1.1",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
     "Microsoft.AspNetCore.Server.Kestrel": "1.0.1",
     "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.0.0",
@@ -26,7 +26,8 @@
     "id.data": "1.0.0-*",
     "id.middleware.common": "1.0.0-*",
     "id.common": "1.0.0-*",
-    "id.application": "1.0.0-*"
+    "id.application": "1.0.0-*",
+    "Microsoft.AspNetCore.Mvc.WebApiCompatShim": "1.0.1"
   },
 
   "tools": {

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using id.data.Repositories;
+using MvcApi.Dtos;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -24,6 +25,7 @@ namespace MvcApi.Controllers
         [HttpGet]
         public IActionResult GetUsers()
         {
+            
             return new ObjectResult(_userRepository.GetAll().ToList());
         }
 
@@ -35,5 +37,7 @@ namespace MvcApi.Controllers
             var l = new List<string>() { "Tome", "Jerry", "Write" };
             return new ObjectResult(l);
         }
+
+        
     }
 }
