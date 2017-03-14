@@ -19,7 +19,7 @@ namespace MvcApi.Controllers
         {
             return StatusCode((int)HttpStatusCode.NoContent);
         }
-        
+
         protected IActionResult BadRequest()
         {
             var y = new ObjectResult(null);
@@ -54,7 +54,7 @@ namespace MvcApi.Controllers
         {
             var y = new ObjectResult(null);
             y.StatusCode = 422;
-            
+
             this.Response.Headers.Add(XHeaders.X_Status, statusCode);
             return y;
         }
@@ -71,11 +71,10 @@ namespace MvcApi.Controllers
 
         protected IActionResult ServerError(IXEntityBase ewhEntityBase)
         {
-            var x = NoOK(ewhEntityBase.XStatus.ToString()) as ResponseMessageResult;
+            var x = NoOK(ewhEntityBase.XStatus.ToString());
             if (ewhEntityBase != null)
             {
-                x.Response.Headers.Add(XHeaders.X_Error_Message, ewhEntityBase.XErrorMessage);
-                x.Response.Headers.Add(XHeaders.X_Status, ewhEntityBase.XStatus.ToString());
+                this.Response.Headers.Add(XHeaders.X_Error_Message, ewhEntityBase.XErrorMessage ?? "");
             }
             return x;
         }

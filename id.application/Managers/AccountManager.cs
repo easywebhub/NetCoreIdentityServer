@@ -102,6 +102,9 @@ namespace id.application.Managers
                 this.XUserLogged = ewhAccount;
                 //_logger.LogInformation(1, "User logged in.");
                 return true;
+            }else
+            {
+                this.XStatus = GlobalStatus.UnSuccess;
             }
             return false;
         }

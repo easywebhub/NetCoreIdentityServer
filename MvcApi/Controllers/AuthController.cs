@@ -33,6 +33,8 @@ namespace MvcApi.Controllers
             return ServerError(_accountManager);
         }
 
+        [Route("auth/signin")]
+        [HttpPost]
         public async Task<IActionResult> Login([FromBody] SignInRequestDto dto)
         {
             if (_accountManager.SignIn(dto).Result)
