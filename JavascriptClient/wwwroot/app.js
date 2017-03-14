@@ -1,5 +1,5 @@
 ﻿function log() {
-    document.getElementById('results').innerText = '';
+    //document.getElementById('results').innerText = '';
 
     Array.prototype.forEach.call(arguments, function (msg) {
         if (msg instanceof Error) {
@@ -29,7 +29,8 @@ var mgr = new Oidc.UserManager(config);
 
 mgr.getUser().then(function (user) {
     if (user) {
-        log("User logged in", user.profile);
+        log("User logged in IdServer", user.profile);
+        userSignInByIdSrv(user.profile.sub);
     }
     else {
         log("User not logged in");
@@ -38,6 +39,22 @@ mgr.getUser().then(function (user) {
 
 function login() {
     mgr.signinRedirect();
+}
+
+function userSignInByIdSrv(idSrvAccId) {
+    log("SignIn couchbase system using IdServerAccountId");
+    console.log('IdSrvAccountID', idSrvAccId);
+    var url = "http://localhost:36921/auth/signin";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.onload = function () {
+        log(xhr.status, JSON.parse(xhr.responseText));
+    }
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    //xhr.setRequestHeader("Authorization", "Bearer " + user.access_token);
+    
+    xhr.send(JSON.stringify({ IdSrvAccountId: idSrvAccId }));
 }
 
 function api() {
