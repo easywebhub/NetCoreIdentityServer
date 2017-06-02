@@ -92,6 +92,7 @@ namespace IdentityServerWithAspNetIdentity
             // this will do the initial DB population
             InitializeDatabase(app);
 
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
@@ -114,6 +115,7 @@ namespace IdentityServerWithAspNetIdentity
             app.UseIdentity();
             app.UseIdentityServer();
 
+            
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
             app.UseGoogleAuthentication(new GoogleOptions
             {
@@ -122,6 +124,16 @@ namespace IdentityServerWithAspNetIdentity
                 ClientId = "614473569130-i3gt1hkjen8mtlvmnnlg9lr4d4ur8ck8.apps.googleusercontent.com",
                 ClientSecret = "apY6gw_sMzJ1fPPxN40dUAQN",
             });
+
+            app.UseFacebookAuthentication(new FacebookOptions()
+            {
+                AppId = Configuration["Authentication:Facebook:AppId"],
+                AppSecret = Configuration["Authentication:Facebook:AppSecret"],
+                Scope = { Configuration["Authentication:Facebook:Scope"] },
+                Fields = { "name", "email", "birthday" },
+                SaveTokens = true
+            });
+            
 
             app.UseMvc(routes =>
             {
@@ -135,11 +147,12 @@ namespace IdentityServerWithAspNetIdentity
         {
             using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
-                scope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database.Migrate();
                 scope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
+                scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>().Database.Migrate();
+                scope.ServiceProvider.GetRequiredService<ApplicationDbContext>().Database.Migrate();
 
                 var context = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
-                context.Database.Migrate();
+
                 if (!context.Clients.Any())
                 {
                     foreach (var client in Config.GetClients())

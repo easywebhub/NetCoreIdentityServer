@@ -1,0 +1,26 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\git\_vta.identityserver\MvcApi
+Now listening on: http://localhost:22537
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:29886/api/values  
+info: IdentityServer4.AccessTokenValidation.Infrastructure.NopAuthenticationMiddleware[7]
+      Bearer was not authenticated. Failure message: No token found.
+dbug: IdentityModel.AspNetCore.ScopeValidation.ScopeValidationMiddleware[0]
+      Skipping scope validation because user is anonymous
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method MvcApi.Controllers.ValuesController.Get (MvcApi) with arguments ((null)) - ModelState is Valid
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+      FROM [AspNetUsers] AS [a]
+info: Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action MvcApi.Controllers.ValuesController.Get (MvcApi) in 1339.9308ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1839.0316ms 200 application/json; charset=utf-8

@@ -1,0 +1,92 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity
+Now listening on: http://localhost:15429
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 1931.0091ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2372.1465ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\jquery\dist\jquery.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/site.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\js\site.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 11.3557ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.1655ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 42.1683ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 42.8284ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 37.4179ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.9334ms 200 image/x-icon
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.Login (IdentityServerWithAspNetIdentity) with arguments () - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
+      Creating key {cd396470-45b6-4ba3-968f-61abe72d6310} with creation date 2017-03-28 02:42:10Z, activation date 2017-03-28 10:07:08Z, and expiration date 2017-06-26 02:42:10Z.
+info: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[39]
+      Writing data to file 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys\key-cd396470-45b6-4ba3-968f-61abe72d6310.xml'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.Login (IdentityServerWithAspNetIdentity) in 594.3658ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 605.3022ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.8213ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery-validation/dist/jquery.validate.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\jquery-validation\dist\jquery.validate.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.6304ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:5000/Account/ExternalLogin application/x-www-form-urlencoded 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) with arguments (Facebook, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes (Facebook).
+info: Microsoft.AspNetCore.Authentication.Facebook.FacebookMiddleware[12]
+      AuthenticationScheme: Facebook was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) in 82.8029ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 95.2267ms 302 

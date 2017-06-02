@@ -1,0 +1,61 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity
+Now listening on: http://localhost:20326
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+      FROM [AspNetUsers] AS [e]
+      WHERE [e].[Id] = @__get_Item_0
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[11]
+      AuthenticationScheme: Identity.Application signed out.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[11]
+      AuthenticationScheme: Identity.External signed out.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[11]
+      AuthenticationScheme: Identity.TwoFactorUserId signed out.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[7]
+      Identity.Application was not authenticated. Failure message: No principal.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 1759.5176ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2416.9819ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/site.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\js\site.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\jquery\dist\jquery.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 16.5245ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 19.1573ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.0624ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.8716ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 28.4556ms 200 application/javascript

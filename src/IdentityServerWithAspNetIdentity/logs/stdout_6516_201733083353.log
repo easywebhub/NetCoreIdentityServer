@@ -1,0 +1,215 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity
+Now listening on: http://localhost:26157
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 2401.7849ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2853.5568ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /css/site.css was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /lib/jquery/dist/jquery.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /js/site.js was not modified
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 26.1528ms 304 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 26.5202ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.3ms 304 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 25.3906ms 304 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.8105ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.Login (IdentityServerWithAspNetIdentity) with arguments () - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Account/Login.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.Login (IdentityServerWithAspNetIdentity) in 615.0575ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 628.1827ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 0.7595ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[6]
+      The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js was not modified
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.5385ms 304 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:5000/Account/ExternalLogin application/x-www-form-urlencoded 198
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) with arguments (Google, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes (Google).
+info: Microsoft.AspNetCore.Authentication.Google.GoogleMiddleware[12]
+      AuthenticationScheme: Google was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) in 87.9891ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 97.4596ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/signin-google?state=CfDJ8HBkOc22RaNLlo9hq-ctYxBp1DHM_DB4ZahMDrfY-koe-A3QECvg7w9MXdjjbVmfX1nOqIFM9iXGQ7b_txgCD8uS1NzgEjovG6o0Rjp4jYiZRVamzLTny07L9lBwXaTYLuSMtKBntTcGWGl0XlWDhAPBrlKRUw-j5g3P-3F9s-ZUIiz78NNDxLgmfEyDhZ7FP4ex_Ayedbu6M0q7W5FbDCJXH0dvb9lVYI2a75YBhnI3iTamxkyzKGrX-H68z804VvpYOTIMTw52SFYd9KsJ0RM&code=4/2bnzLPB0BysBq8ODcX5OAqavh15YbJ9iB-AvlqWeztg&authuser=0&session_state=f7433255e1d74d9f8346fa93d8bf2aedd929ae2c..449c&prompt=none  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[10]
+      AuthenticationScheme: Identity.External signed in.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 997.3871ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/Account/ExternalLoginCallback  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginCallback (IdentityServerWithAspNetIdentity) with arguments (, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.External was successfully authenticated.
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (63ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [e].[LoginProvider], [e].[ProviderKey], [e].[ProviderDisplayName], [e].[UserId]
+      FROM [AspNetUserLogins] AS [e]
+      WHERE ([e].[LoginProvider] = @__get_Item_0) AND ([e].[ProviderKey] = @__get_Item_1)
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Account/ExternalLoginConfirmation.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginCallback (IdentityServerWithAspNetIdentity) in 380.3129ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 382.4882ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:5000/Account/ExternalLogin application/x-www-form-urlencoded 200
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) with arguments (Facebook, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ChallengeResult[1]
+      Executing ChallengeResult with authentication schemes (Facebook).
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.External was successfully authenticated.
+info: Microsoft.AspNetCore.Authentication.Facebook.FacebookMiddleware[12]
+      AuthenticationScheme: Facebook was challenged.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLogin (IdentityServerWithAspNetIdentity) in 3.7931ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 5.2535ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/signin-facebook?code=AQAPJTkpd16V3Xx9BMmnUCUY2Ru4X7GprbxiU7wcUQ0Hpa6N_Ak5HKonn5etcT6G6lr7ZjTrxp62FOWswoeEe8FDFxobrIxb9MVK8bGS86fu8V_jZqQ5u3hdmLufF-KVK0fNQ7Yvm1FqncO5LGw-j8HKm3yeyBkhskxZGJUPJQ9FIX0iNb6jr4aKr7nFz0cZuaGYbBRIaqUfC9ZRcgEEUajoA0ul0PPklEIJ8wd7MBtxTsSjCel8V3A_XBmNRLm6RlHWsIW_tbf7PjlT9CAlQT9GQJhe3zL28PIsFMpbj_D4F3KhB1PonVJHzqek8TiGqz3Bf_FdMSTJCRJHDhl5TmdF&state=CfDJ8HBkOc22RaNLlo9hq-ctYxAjgCcQECwcud8cUaGCTIOwnMbtG_16o5WU_6WYPixwKcs3M1W1SEodq0dZh5sn4Qu-ILWeaZa7JhscImnL1OdIWeW5CbXNnvN8jumT1gwJ0E6FNEBLcKWXNCLIS0Fued13QqKwbPdUgZBI9QoCAeggZKxvn9c6NpfN_-7eVsQhNfzKps6VrD0zG1L7ttfDJlQXVZE95RQaIaSv2WPStkkhxgYhA1p2TbaTJ9y1OATWvv0pHQZ1-d62xhPLh5IP-GA  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[10]
+      AuthenticationScheme: Identity.External signed in.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 768.6705ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/Account/ExternalLoginCallback  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginCallback (IdentityServerWithAspNetIdentity) with arguments (, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.External was successfully authenticated.
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [e].[LoginProvider], [e].[ProviderKey], [e].[ProviderDisplayName], [e].[UserId]
+      FROM [AspNetUserLogins] AS [e]
+      WHERE ([e].[LoginProvider] = @__get_Item_0) AND ([e].[ProviderKey] = @__get_Item_1)
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Account/ExternalLoginConfirmation.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginCallback (IdentityServerWithAspNetIdentity) in 19.4195ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 21.9491ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost:5000/Account/ExternalLoginConfirmation application/x-www-form-urlencoded 217
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginConfirmation (IdentityServerWithAspNetIdentity) with arguments (IdentityServerWithAspNetIdentity.Models.AccountViewModels.ExternalLoginConfirmationViewModel, ) - ModelState is Valid
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.External was successfully authenticated.
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+      FROM [AspNetUsers] AS [u]
+      WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?', @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?', @p5='?', @p6='?', @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?', @p12='?' (Size = 4000), @p13='?', @p14='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (Size = 450), @__get_Item_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [e].[LoginProvider], [e].[ProviderKey], [e].[ProviderDisplayName], [e].[UserId]
+      FROM [AspNetUserLogins] AS [e]
+      WHERE ([e].[LoginProvider] = @__get_Item_0) AND ([e].[ProviderKey] = @__get_Item_1)
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+      FROM [AspNetUsers] AS [u]
+      WHERE [u].[NormalizedUserName] = @__normalizedUserName_0
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p18='?' (Size = 450), @p4='?', @p5='?' (Size = 4000), @p19='?' (Size = 4000), @p6='?' (Size = 256), @p7='?', @p8='?', @p9='?', @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?', @p15='?' (Size = 4000), @p16='?', @p17='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+      SET NOCOUNT ON;
+      INSERT INTO [AspNetUserLogins] ([LoginProvider], [ProviderKey], [ProviderDisplayName], [UserId])
+      VALUES (@p0, @p1, @p2, @p3);
+      UPDATE [AspNetUsers] SET [AccessFailedCount] = @p4, [ConcurrencyStamp] = @p5, [Email] = @p6, [EmailConfirmed] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+      WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;
+      SELECT @@ROWCOUNT;
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [role].[Name]
+      FROM [AspNetUserRoles] AS [userRole]
+      INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+      WHERE [userRole].[UserId] = @__userId_0
+info: Microsoft.EntityFrameworkCore.Storage.IRelationalCommandBuilderFactory[1]
+      Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+      SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+      FROM [AspNetUserClaims] AS [uc]
+      WHERE [uc].[UserId] = @__user_Id_0
+dbug: IdentityServer4.Hosting.AuthenticationHandler[0]
+      Augmenting SignInContext
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[10]
+      AuthenticationScheme: Identity.Application signed in.
+info: IdentityServerWithAspNetIdentity.Controllers.AccountController[6]
+      User created an account using Facebook provider.
+info: Microsoft.AspNetCore.Mvc.RedirectToActionResult[1]
+      Executing RedirectResult, redirecting to /.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.AccountController.ExternalLoginConfirmation (IdentityServerWithAspNetIdentity) in 425.8008ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 428.0685ms 302 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[3]
+      HttpContext.User merged via AutomaticAuthentication from authenticationScheme: Identity.Application.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationMiddleware[8]
+      AuthenticationScheme: Identity.Application was successfully authenticated.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 9.0042ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 16.3961ms 200 text/html; charset=utf-8

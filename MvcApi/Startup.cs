@@ -131,14 +131,14 @@ namespace MvcApi
 
             app.UseIdentity();
             app.UseIdentityServer();
-
+            
             app.UseIdentityServerAuthentication(new IdentityServerAuthenticationOptions
             {
-                Authority = "http://id.easyadmincp.com",
+                Authority = Configuration.GetValue<string>("AppSettings:IdServerEndPoint"),
                 RequireHttpsMetadata = false,
 
-                ApiName = "apis_fullaccess", // token trả về phải có aud chứa Resource này ( ApiName) thì mới xác thực, Không qui định thì là ALL, ko ràng buộc
-                AllowedScopes = { "apis_fullaccess__read", "apis_fullaccess__write" } // client phải request token với 1 trong các scope này mới dc chứng thực, KHONG QUI DINH -> ALL, ko ràng buộc
+                //ApiName = "apis_fullaccess", // token trả về phải có aud chứa Resource này ( ApiName) thì mới xác thực, Không qui định thì là ALL, ko ràng buộc
+                //AllowedScopes = { "apis_fullaccess__read", "apis_fullaccess__write" } // client phải request token với 1 trong các scope này mới dc chứng thực, KHONG QUI DINH -> ALL, ko ràng buộc
 
             });
 

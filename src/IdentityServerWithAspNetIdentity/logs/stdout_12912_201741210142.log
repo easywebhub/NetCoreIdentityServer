@@ -1,0 +1,54 @@
+dbug: IdentityServer4.Hosting.CookieMiddlewareExtensions[0]
+      Using hosting application's CookieAuthentication middleware with scheme: Identity.Application
+info: Microsoft.Extensions.DependencyInjection.DataProtectionServices[0]
+      User profile is available. Using 'C:\Users\ThanhAdmin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Development
+Content root path: F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity
+Now listening on: http://localhost:10894
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) with arguments ((null)) - ModelState is Valid
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor[1]
+      Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action IdentityServerWithAspNetIdentity.Controllers.HomeController.Index (IdentityServerWithAspNetIdentity) in 1942.7762ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 2358.2329ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/js/site.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\js\site.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\jquery\dist\jquery.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/css/site.css'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\css\site.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 16.7876ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 17.8893ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 47.4301ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 27.6759ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 29.2765ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/favicon.ico'. Physical path: 'F:\projects\git\_vta.identityserver\src\IdentityServerWithAspNetIdentity\wwwroot\favicon.ico'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1.0683ms 200 image/x-icon
